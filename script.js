@@ -4,7 +4,8 @@ function createTable() {
             const cols = prompt("Input number of columns");
 
             const table = document.getElementById("myTable");
-
+             table.innerHTML = ""; // Clear existing table content if any
+	
             for (let i = 0; i <= rows; i++) {
                 const tr = document.createElement("tr");
                 for (let j = 0; j <= cols; j++) {
